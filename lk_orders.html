@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#1B429C">
+		<meta name="theme-color" content="#1B429C">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)" async>
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<button class="menu_btn">
+							<span>Меню</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="catalog_link">
+							<a href="/">Каталог</a>
+						</div>
+
+						<div class="socials">
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+							</a>
+						</div>
+
+						<div class="phone">
+							<a href="tel:+74953695857">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<span>+7 (495) 369-58-57</span>
+							</a>
+						</div>
+
+						<button class="search_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+						</button>
+
+						<div class="links">
+							<div><a href="/" class="favorites_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_favorite"></use></svg>
+							</a></div>
+
+							<div><a href="/">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+							</a></div>
+
+							<div><button class="btn modal_btn" data-modal="login_modal">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+							</button></div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="main_menu">
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="data">
+						<div><a href="/">О компании</a></div>
+						<div><a href="/">Услуги и решения</a></div>
+						<div><a href="/">Условия гарантии</a></div>
+						<div><a href="/">Покупателям</a></div>
+						<div><a href="/">Вакансии</a></div>
+						<div><a href="/">Новости</a></div>
+						<div><a href="/">Блог</a></div>
+						<div><a href="/">контакты</a></div>
+					</div>
+
+					<div class="image">
+						<img data-src="images/menu_img.jpg" alt="" class="lazyload">
+					</div>
+				</section>
+
+
+				<section class="main_search">
+					<button class="close_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="data">
+						<div class="title">Поиск</div>
+
+						<form action="">
+							<input type="text" name="" value="" class="input" placeholder="Поиск">
+
+							<button type="submit" class="submit_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+							</button>
+						</form>
+					</div>
+
+					<div class="image">
+						<img data-src="images/search_img.jpg" alt="" class="lazyload">
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="breadcrumbs">
+						<div class="cont mini">
+							<a href="/">Главная</a> <span class="sep"></span>
+							<span class="current">Личный кабинет</span>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="lk_info">
+					<div class="cont row">
+						<div class="col_left">
+							<h1 class="page_title">Личный кабинет</h1>
+
+							<button class="logout_btn">Выход</button>
+						</div>
+
+						<div class="col_main">
+							<div class="lk_menu">
+								<a href="/" class="btn">Данные покупателя</a>
+								<a class="btn active">Список заказов</a>
+								<a href="/" class="btn">Заказанные товары</a>
+							</div>
+
+							<div class="orders accordion">
+								<div class="order accordion_item">
+									<div class="head">
+										<div class="number">№ 152</div>
+
+										<div class="sep"></div>
+
+										<div class="date">08 февраля 2022, 03:44:44</div>
+
+										<div class="sep"></div>
+
+										<div class="price">3 товара (8 490 ₽)</div>
+
+										<div class="sep"></div>
+
+										<div class="status">Новый</div>
+
+										<div class="sep"></div>
+
+										<button class="repeat_btn">Повторить заказ</button>
+									</div>
+
+									<div class="data">
+										<table>
+											<tbody>
+												<tr>
+													<td>E16100</td>
+													<td>8 490 ₽</td>
+													<td>1</td>
+													<td>8 490 ₽</td>
+												</tr>
+
+												<tr>
+													<td>E16100</td>
+													<td>8 490 ₽</td>
+													<td>1</td>
+													<td>8 490 ₽</td>
+												</tr>
+
+												<tr>
+													<td>E16100</td>
+													<td>8 490 ₽</td>
+													<td>1</td>
+													<td>8 490 ₽</td>
+												</tr>
+
+												<tr>
+													<td>E16100</td>
+													<td>8 490 ₽</td>
+													<td>1</td>
+													<td>8 490 ₽</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="order accordion_item">
+									<div class="head">
+										<div class="number">№ 152</div>
+
+										<div class="sep"></div>
+
+										<div class="date">08 февраля 2022, 03:44:44</div>
+
+										<div class="sep"></div>
+
+										<div class="price">3 товара (8 490 ₽)</div>
+
+										<div class="sep"></div>
+
+										<div class="status">Новый</div>
+
+										<div class="sep"></div>
+
+										<button class="repeat_btn">Повторить заказ</button>
+									</div>
+
+									<div class="data">
+
+									</div>
+								</div>
+
+								<div class="order accordion_item">
+									<div class="head">
+										<div class="number">№ 152</div>
+
+										<div class="sep"></div>
+
+										<div class="date">08 февраля 2022, 03:44:44</div>
+
+										<div class="sep"></div>
+
+										<div class="price">3 товара (8 490 ₽)</div>
+
+										<div class="sep"></div>
+
+										<div class="status">Новый</div>
+
+										<div class="sep"></div>
+
+										<button class="repeat_btn">Повторить заказ</button>
+									</div>
+
+									<div class="data">
+
+									</div>
+								</div>
+
+								<div class="order accordion_item">
+									<div class="head">
+										<div class="number">№ 152</div>
+
+										<div class="sep"></div>
+
+										<div class="date">08 февраля 2022, 03:44:44</div>
+
+										<div class="sep"></div>
+
+										<div class="price">3 товара (8 490 ₽)</div>
+
+										<div class="sep"></div>
+
+										<div class="status">Новый</div>
+
+										<div class="sep"></div>
+
+										<button class="repeat_btn">Повторить заказ</button>
+									</div>
+
+									<div class="data">
+
+									</div>
+								</div>
+
+								<div class="order accordion_item">
+									<div class="head">
+										<div class="number">№ 152</div>
+
+										<div class="sep"></div>
+
+										<div class="date">08 февраля 2022, 03:44:44</div>
+
+										<div class="sep"></div>
+
+										<div class="price">3 товара (8 490 ₽)</div>
+
+										<div class="sep"></div>
+
+										<div class="status">Новый</div>
+
+										<div class="sep"></div>
+
+										<button class="repeat_btn">Повторить заказ</button>
+									</div>
+
+									<div class="data">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont mini row">
+					<div class="col">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+						</div>
+
+						<div class="socials">
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+							</a>
+
+							<a href="/" target="_blank" rel="noopener nofollow">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Интернет-магазин</div>
+
+						<div class="items">
+							<div><a href="/">Производители</a></div>
+							<div><a href="/">Товары</a></div>
+						</div>
+					</div>
+
+					<div class="links">
+						<div class="title">Покупателям</div>
+
+						<div class="items">
+							<div><a href="/">Как сделать заказ</a></div>
+							<div><a href="/">Доставка и оплата</a></div>
+						</div>
+					</div>
+
+					<div class="menu">
+						<div><a href="/">О компании</a></div>
+						<div><a href="/">Условия гарантии</a></div>
+						<div><a href="/">Сервисная поддержка</a></div>
+						<div><a href="/">Вакансии</a></div>
+						<div><a href="/">Новости</a></div>
+						<div><a href="/">Блог</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+
+					<div class="contacts">
+						Юридический / почтовый адрес: 125080, город<br> Москва, Волоколамское шоссе, дом 1 строение 1<br>
+						Телефон / факс: <a href="tel:+74953695857">+7 (495) 369-58-57</a><br>
+						Почта для запросов:<br>
+						<a href="mailto:zapros@exesystems.ru">zapros@exesystems.ru</a><br>
+						Общая почта:<br>
+						<a href="mailto:mail@exesystems.ru">mail@exesystems.ru</a>
+					</div>
+				</div>
+
+				<div class="cont mini row">
+					<div class="company">Общество с ограниченной ответственностью «Экзе Системс»(ООО «Экзе Системс»)</div>
+
+					<div class="copyright">&copy; 1993—2022 Softline</div>
+
+					<div class="privacy_policy_link">
+						<a href="/">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<section class="modal" id="register_modal">
+			<div class="modal_title">Регистрация</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Регистрация</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="login_modal">
+			<div class="modal_title">Вход</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Новый пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button class="recovery_btn modal_btn" data-modal="recovery_modal">Забыли пароль?</button>
+
+					<button type="submit" class="submit_btn">Войти</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="recovery_modal">
+			<div class="modal_title">Изменить пароль</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Старый пароль">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="password" name="" value="" class="input" placeholder="Новый пароль">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Изменить</button>
+				</div>
+			</form>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
