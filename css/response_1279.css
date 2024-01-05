@@ -847,6 +847,47 @@
 
 
     /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        bottom: 16px;
+
+        max-width: calc(100% - 32px);
+        padding: 16px 32px;
+
+        border-radius: 12px;
+    }
+
+
+    .cookie .icon
+    {
+        width: 60px;
+        height: 62px;
+    }
+
+
+    .cookie .text
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        width: calc(100% - 328px);
+        margin-left: 0;
+    }
+
+
+    .cookie .close_btn
+    {
+        font-size: 15px;
+
+        width: 220px;
+        height: 56px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .cont + .cont

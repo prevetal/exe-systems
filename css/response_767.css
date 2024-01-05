@@ -1122,6 +1122,43 @@
 
 
     /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        bottom: 12px;
+
+        max-width: calc(100% - 24px);
+        padding: 12px;
+    }
+
+
+    .cookie .icon
+    {
+        display: none;
+    }
+
+
+    .cookie .text
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        width: calc(100% - 168px);
+    }
+
+
+    .cookie .close_btn
+    {
+        font-size: 13px;
+
+        width: 160px;
+        height: 40px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .cont + .cont

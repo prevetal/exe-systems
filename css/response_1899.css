@@ -1040,6 +1040,43 @@
 
 
     /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        padding: 24px 68px;
+
+        border-radius: 20px;
+    }
+
+
+    .cookie .icon
+    {
+        width: 88px;
+        height: 90px;
+    }
+
+
+    .cookie .text
+    {
+        font-size: 18px;
+        line-height: 26px;
+
+        width: calc(100% - 468px);
+    }
+
+
+    .cookie .close_btn
+    {
+        font-size: 18px;
+
+        width: 280px;
+        height: 68px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .cont + .cont

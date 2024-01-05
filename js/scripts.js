@@ -485,6 +485,19 @@ document.addEventListener('DOMContentLoaded', function () {
 			})
 		})
 	}
+
+
+	// Cookie
+	if(!localStorage.getItem('cookie_accept')) {
+		$('.cookie').addClass('show')
+	}
+
+	$('.cookie .close_btn').click(function(e) {
+		e.preventDefault()
+
+		localStorage.setItem('cookie_accept', true)
+		$('.cookie').fadeOut(200)
+	})
 })
 
 

@@ -1118,6 +1118,43 @@
 
 
     /*------------
+        Cookie
+    ------------*/
+    .cookie
+    {
+        padding: 20px 60px;
+
+        border-radius: 16px;
+    }
+
+
+    .cookie .icon
+    {
+        width: 68px;
+        height: 70px;
+    }
+
+
+    .cookie .text
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        width: calc(100% - 408px);
+    }
+
+
+    .cookie .close_btn
+    {
+        font-size: 16px;
+
+        width: 240px;
+        height: 60px;
+    }
+
+
+
+    /*------------
         Footer
     ------------*/
     footer .cont + .cont
