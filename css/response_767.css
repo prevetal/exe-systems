@@ -6,8 +6,15 @@
     -------------------*/
     :root
     {
-        --font_size_title: 44px;
+        --font_size_title: 30px;
     }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
 
 
     .swiper-horizontal > .swiper-pagination-bullets,
@@ -54,16 +61,6 @@
 
 
 
-    /*--------------
-        Line sep
-    --------------*/
-    .line_sep
-    {
-        margin-bottom: 72px;
-    }
-
-
-
     /*---------------
         Main menu
     ---------------*/
@@ -78,12 +75,6 @@
         margin: 0;
 
         color: #1b429c;
-    }
-
-    .main_menu .close_btn .icon
-    {
-        width: 28px;
-        height: 28px;
     }
 
 
@@ -132,12 +123,6 @@
         color: #1b429c;
     }
 
-    .main_search .close_btn .icon
-    {
-        width: 28px;
-        height: 28px;
-    }
-
 
     .main_search .data
     {
@@ -151,7 +136,10 @@
 
     .main_search .title
     {
-        font-size: 44px;
+        font-size: 26px;
+
+        margin-bottom: 20px;
+        padding-left: 0;
     }
 
 
@@ -234,34 +222,68 @@
 
 
 
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
     /*---------------
         Page head
     ---------------*/
     .page_head
     {
-        padding-top: 108px;
+        margin-bottom: 60px;
+        padding: 148px 0 40px;
+    }
+
+    .page_head.small_pad
+    {
+        padding: 148px 0 40px;
     }
 
 
-    .breadcrumbs
+    .page_head .logo
+    {
+        width: 70px;
+        height: 64px;
+        margin-right: 20px;
+        padding: 11px;
+
+        border-radius: 16px;
+    }
+
+
+    .page_head .title
+    {
+        font-size: 32px;
+    }
+
+
+    .page_head .desc
+    {
+        font-size: 14px;
+
+        width: 396px;
+    }
+
+
+    .page_head .link a
     {
         font-size: 13px;
-
-        padding: 12px 0;
+        line-height: 23px;
     }
 
 
-    .page_title
-    {
-        font-size: 35px;
 
-        margin-top: 20px;
+    /*-----------------
+        Breadcrumbs
+    -----------------*/
+    .breadcrumbs
+    {
+        font-size: 12px;
+
+        padding-top: 124px;
+    }
+
+
+    .breadcrumbs .sep
+    {
+        margin: 0 6px;
     }
 
 
@@ -269,13 +291,9 @@
     /*----------------
         Block head
     ----------------*/
-    .block_head,
-    .block_head.big_m,
-    .block_head.big_m2,
-    .block_head.big_m3,
-    .block_head.big_m4
+    .block_head
     {
-        margin-bottom: 48px;
+        margin-bottom: 32px;
     }
 
 
@@ -313,6 +331,18 @@
     }
 
 
+    .text_block .text_indent
+    {
+        text-indent: 24px;
+    }
+
+
+    .text_block table td
+    {
+        padding: 8px;
+    }
+
+
 
     /*-----------------
         Main slider
@@ -325,66 +355,49 @@
     }
 
 
-    .main_slider .title
+
+    /*-------------------------
+        Import substitution
+    -------------------------*/
+    .import_substitution .block_head
     {
-        font-size: 37px;
-        line-height: 47px;
+        margin-bottom: 32px;
+    }
+
+
+    .import_substitution .data
+    {
+        width: 100%;
+    }
+
+
+    .import_substitution .link a
+    {
+        font-size: 15px;
+
+        padding: 14px 48px;
+    }
+
+
+    .import_substitution .img
+    {
+        display: none;
     }
 
 
 
-    /*--------------
-        Services
-    --------------*/
-    .services
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row
     {
-        margin-bottom: 60px;
+        margin-left: 0;
     }
 
-
-    .services .row
+    .categories .row > *
     {
-        margin-bottom: -8px;
-        margin-left: -8px;
-    }
-
-    .services .row > *,
-    .services .row > *.big_w
-    {
-        width: calc(50% - 8px);
-        margin-bottom: 8px;
-        margin-left: 8px;
-    }
-
-
-    .services .service
-    {
-        font-size: 14px;
-        line-height: 20px;
-
-        min-height: 208px;
-        padding: 0 16px 16px;
-    }
-
-
-    .services .service:after
-    {
-        top: 16px;
-        right: 16px;
-
-        transform: scale(.7);
-    }
-
-
-    .services .service .thumb
-    {
-        height: 132px;
-    }
-
-    .services .service .thumb img
-    {
-        width: 68px;
-        height: 68px;
+        width: 100%;
+        margin-left: 0;
     }
 
 
@@ -394,8 +407,7 @@
     ------------*/
     .brands
     {
-        margin-bottom: 72px;
-        padding: 72px 0;
+        padding: 60px 0;
     }
 
 
@@ -412,12 +424,6 @@
     }
 
 
-    .brands .brand .name
-    {
-        min-height: 124px;
-    }
-
-
     .brands .brand .logo
     {
         height: 160px;
@@ -430,7 +436,19 @@
     ----------------*/
     .about_info
     {
-        margin-bottom: 72px;
+        margin-bottom: 60px;
+    }
+
+
+    .about_info .data
+    {
+        width: 100%;
+    }
+
+
+    .about_info .link
+    {
+        margin-top: 32px;
     }
 
 
@@ -454,9 +472,8 @@
     ----------------*/
     .advantages
     {
-        margin-bottom: 72px;
         padding-top: 80px;
-        padding-bottom: 72px;
+        padding-bottom: 60px;
     }
 
 
@@ -469,7 +486,15 @@
 
     .advantages .swiper-slide
     {
-        width: calc(100vw - 88px);
+        width: 320px;
+    }
+
+
+    .advantages .item .desc
+    {
+        font-size: 14px;
+
+        margin-top: 20px;
     }
 
 
@@ -477,7 +502,7 @@
     /*-------------
         Reviews
     -------------*/
-    .reviews
+    /* .reviews
     {
         margin-bottom: 72px;
     }
@@ -516,19 +541,13 @@
         font-size: 18px;
 
         margin-bottom: 16px;
-    }
+    } */
 
 
 
     /*--------------
         Partners
     --------------*/
-    .partners
-    {
-        margin-bottom: 72px;
-    }
-
-
     .partners .row
     {
         margin-bottom: -8px;
@@ -545,65 +564,8 @@
 
     .partners .item
     {
-        height: 132px;
+        height: 108px;
         padding: 12px;
-    }
-
-    .partners .item.empty ~ .item.empty
-    {
-        display: none;
-    }
-
-
-
-    /*----------------
-        About head
-    ----------------*/
-    .about_head
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .about_head .cont
-    {
-        height: 480px;
-        min-height: 0;
-        padding-bottom: 80px;
-    }
-
-
-    .about_head .title
-    {
-        font-size: 37px;
-        line-height: 47px;
-    }
-
-
-
-    /*----------------
-        About desc
-    ----------------*/
-    .about_desc
-    {
-        margin-bottom: 72px;
-    }
-
-
-    .about_desc .data
-    {
-        font-size: 14px;
-
-        width: 100%;
-    }
-
-
-    .about_desc .image
-    {
-        width: 100%;
-        height: auto;
-        margin-top: 32px;
-        padding-bottom: 125%;
     }
 
 
@@ -613,8 +575,7 @@
     -----------*/
     .certs
     {
-        margin-bottom: 72px;
-        padding: 72px 0;
+        padding: 60px 0;
     }
 
 
@@ -628,31 +589,21 @@
     /*------------------
         Presentation
     ------------------*/
-    .presentation
+    .presentation .row > *
     {
-        margin-bottom: 72px;
+        width: calc(50% - 20px);
     }
 
 
-    .presentation .download_link
+    .presentation .item
     {
-        font-size: 20px;
-        line-height: 28px;
-
-        order: 2;
-
-        width: 100%;
-        height: 200px;
+        height: 180px;
     }
 
 
-    .presentation .title
+    .presentation .item .name
     {
-        font-size: 37px;
-        line-height: 47px;
-
-        width: 100%;
-        margin-bottom: 32px;
+        font-size: 17px;
     }
 
 
@@ -662,7 +613,7 @@
     -------------------*/
     .contacts_info
     {
-        padding: 72px 0;
+        padding: 60px 0;
     }
 
 
@@ -698,48 +649,22 @@
     /*---------------
         Cart info
     ---------------*/
-    .cart_info
+    .cart_info .block_title
     {
-        margin-bottom: 72px;
-    }
-
-
-    .cart_info table tr
-    {
-        padding-left: 152px;
-    }
-
-
-    .cart_info table td.thumb
-    {
-        width: 132px;
-    }
-
-
-    .cart_info table td.name
-    {
-        font-size: 17px;
-        line-height: 23px;
+        font-size: 24px;
     }
 
 
     .cart_info table td.price,
     .cart_info table td.amount
     {
-        width: auto;
+        width: 50%;
     }
 
-
-    .cart_info table td.price
+    .cart_info table td.price:before,
+    .cart_info table td.amount:before
     {
-        font-size: 19px;
-        line-height: 32px;
-    }
-
-    .cart_info table td.price .old
-    {
-        font-size: 14px;
-        line-height: 26px;
+        font-size: 13px;
     }
 
 
@@ -819,56 +744,9 @@
 
 
 
-    /*-------------------
-        Category head
-    -------------------*/
-    .category_head
-    {
-        padding-top: 160px;
-    }
-
-    .category_head.margin
-    {
-        padding-bottom: 52px;
-    }
-
-
-    .category_head .title
-    {
-        font-size: 37px;
-        line-height: 47px;
-    }
-
-
-    .category_head .desc
-    {
-        font-size: 14px;
-        line-height: 22px;
-
-        width: 100%;
-    }
-
-
-
-    /*-------------------
-        Category info
-    -------------------*/
-    .category_info
-    {
-        margin-bottom: 72px;
-    }
-
-
-
     /*--------------
         Products
     --------------*/
-    .products
-    {
-        margin-bottom: 72px;
-    }
-
-
     .products .block_title
     {
         font-size: 33px;
@@ -902,8 +780,6 @@
     {
         margin-bottom: -16px;
         margin-left: -16px;
-
-        --products_count: 2;
     }
 
     .products .row > *
@@ -916,15 +792,28 @@
 
     .products .product .thumb
     {
-        height: 200px;
-        margin-bottom: 24px;
+        height: 140px;
     }
 
 
     .products .product .name
     {
-        font-size: 17px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    .products .product .desc
+    {
+        font-size: 12px;
+
+        margin-top: 8px;
+    }
+
+
+    .products .product .btns
+    {
+        margin-top: 12px;
     }
 
 
@@ -932,8 +821,6 @@
     .products .product .btns .btn.buy_btn
     {
         font-size: 13px;
-
-        padding: 10px 20px;
     }
 
 
@@ -943,7 +830,7 @@
     --------------*/
     .feedback
     {
-        padding: 72px 0;
+        padding: 60px 0;
     }
 
 
@@ -974,9 +861,15 @@
     /*-------------
         LK info
     -------------*/
-    .lk_info
+    .lk_info .block_title
     {
-        margin-bottom: 72px;
+        font-size: 24px;
+    }
+
+
+    .lk_info .logout_btn
+    {
+        margin-top: 28px;
     }
 
 
@@ -994,6 +887,8 @@
 
         border-radius: 0;
 
+        scroll-padding: 0 16px;
+        scroll-snap-type: x mandatory;
         scrollbar-color: transparent transparent !important;
         scrollbar-width: thin !important;
     }
@@ -1022,6 +917,8 @@
         padding: 16px 0;
 
         vertical-align: top;
+
+        scroll-snap-align: start;
     }
 
     .lk_info .lk_menu .btn + .btn
@@ -1058,9 +955,9 @@
     }
 
 
-    .lk_info .orders .repeat_btn
+    .lk_info .orders .sep
     {
-        order: 3;
+        height: 20px;
     }
 
 
@@ -1072,6 +969,8 @@
     .lk_info .orders .date + .sep
     {
         order: 2;
+
+        margin-top: 12px;
     }
 
 
@@ -1191,10 +1090,18 @@
     }
 
 
-    footer .copyright,
+    footer .copyright
+    {
+        margin-top: 12px;
+    }
+
+
     footer .privacy_policy_link
     {
-        margin-top: 16px;
+        width: 100%;
+        margin-top: 12px;
+
+        text-align: left;
     }
 
 

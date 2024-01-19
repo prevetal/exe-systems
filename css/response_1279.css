@@ -7,7 +7,7 @@
     :root
     {
         --sidebar_width: 100%;
-        --font_size_title: 60px;
+        --font_size_title: 36px;
     }
 
 
@@ -77,37 +77,33 @@
     /*------------
         Header
     ------------*/
-    header .menu_btn
+    header .exp
     {
-        margin-left: 60px;
+        display: none;
     }
 
 
 
-    header .catalog_link
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
     {
-        margin-left: 80px;
+        padding: 159px 0 80px;
     }
 
 
-
-    header .phone
+    .page_head .title
     {
-        margin-left: 40px;
+        font-size: 44px;
     }
 
 
-
-    header .search_btn
+    .page_head .desc
     {
-        margin-left: 40px;
-    }
+        font-size: 16px;
 
-
-
-    header .links
-    {
-        margin-left: 40px;
+        width: 448px;
     }
 
 
@@ -149,28 +145,12 @@
 
 
 
-    /*---------------
-        Page head
-    ---------------*/
-
-
-
     /*----------------
         Block head
     ----------------*/
-    .block_head,
-    .block_head.big_m,
-    .block_head.big_m2,
-    .block_head.big_m3,
-    .block_head.big_m4
+    .block_head
     {
-        margin-bottom: 68px;
-    }
-
-
-    .block_head.pad_r
-    {
-        padding-right: 200px;
+        margin-bottom: 40px;
     }
 
 
@@ -206,7 +186,19 @@
     ----------------*/
     .text_block
     {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block .text_indent
+    {
+        text-indent: 32px;
     }
 
 
@@ -222,40 +214,72 @@
 
     .main_slider .data
     {
-        width: 800px;
-        margin-left: 0;
+        padding: 0;
     }
 
 
-    .main_slider .title
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .row > *
     {
-        font-size: 60px;
-        line-height: 68px;
+        width: calc(33.333% - 20px);
+    }
+
+
+    .categories .category
+    {
+        font-size: 16px;
+
+        padding: 28px 20px;
+    }
+
+
+    .categories .category .thumb
+    {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
     }
 
 
 
-    /*--------------
-        Services
-    --------------*/
-    .services .service
+    /*-------------------------
+        Import substitution
+    -------------------------*/
+    .import_substitution .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .import_substitution .data
+    {
+        width: calc(100% - 384px);
+    }
+
+
+    .import_substitution .link
+    {
+        margin-top: 28px;
+    }
+
+    .import_substitution .link a
     {
         font-size: 18px;
 
-        min-height: 280px;
-        padding: 0 24px 24px;
+        padding: 16px 60px;
     }
 
 
-    .services .service .thumb
+    .import_substitution .img
     {
-        height: 200px;
-    }
+        top: 80px;
 
-    .services .service .thumb img
-    {
-        width: 104px;
-        height: 104px;
+        width: 680px;
+        height: 680px;
+        margin-right: -800px;
     }
 
 
@@ -266,7 +290,7 @@
     .brands .swiper-button-next,
     .brands .swiper-button-prev
     {
-        margin-bottom: 88px;
+        margin-bottom: 47px;
     }
 
     .brands .swiper-button-prev
@@ -281,7 +305,7 @@
     ----------------*/
     .about_info .data
     {
-        width: 604px;
+        width: calc(100% - 384px);
     }
 
 
@@ -300,7 +324,7 @@
 
     .about_info .img
     {
-        top: 100px;
+        top: 80px;
 
         width: 680px;
         height: 680px;
@@ -314,14 +338,15 @@
     ----------------*/
     .advantages
     {
-        padding-top: 140px;
+        padding-top: 148px;
+        padding-bottom: 70px;
     }
 
 
     .advantages .swiper-button-next,
     .advantages .swiper-button-prev
     {
-        margin-bottom: 88px;
+        margin-bottom: 47px;
     }
 
     .advantages .swiper-button-prev
@@ -330,22 +355,23 @@
     }
 
 
-    .advantages .swiper-slide
-    {
-        width: 380px;
-    }
-
-
     .advantages .item
     {
-        padding: 79px 23px 35px;
+        padding: 63px 23px 27px;
     }
+
 
     .advantages .item .name
     {
         font-size: 18px;
+    }
 
-        margin-bottom: 32px;
+
+    .advantages .item .desc
+    {
+        font-size: 15px;
+
+        margin-top: 24px;
     }
 
 
@@ -353,7 +379,7 @@
     /*-------------
         Reviews
     -------------*/
-    .reviews .swiper-button-next,
+    /* .reviews .swiper-button-next,
     .reviews .swiper-button-prev
     {
         margin-bottom: 88px;
@@ -381,7 +407,7 @@
     .reviews .review .text
     {
         font-size: 14px;
-    }
+    } */
 
 
 
@@ -390,24 +416,7 @@
     --------------*/
     .partners .item
     {
-        height: 172px;
-    }
-
-
-
-    /*----------------
-        About head
-    ----------------*/
-    .about_head .cont
-    {
-        padding-bottom: 80px;
-    }
-
-
-    .about_head .title
-    {
-        font-size: 60px;
-        line-height: 68px;
+        height: 140px;
     }
 
 
@@ -417,16 +426,13 @@
     ----------------*/
     .about_desc .data
     {
-        font-size: 18px;
-
-        width: calc(100% - 480px);
+        width: calc(100% - 460px);
     }
 
 
     .about_desc .image
     {
         width: 440px;
-        height: 560px;
     }
 
 
@@ -452,29 +458,25 @@
     /*------------------
         Presentation
     ------------------*/
-    .presentation .download_link
+    .presentation .item
     {
-        font-size: 25px;
-        line-height: 33px;
+        height: 260px;
+        padding: 18px;
 
-        width: 320px;
-        height: 320px;
-        padding: 22px;
-
-        border-radius: 16px;
-    }
-
-    .presentation .download_link .icon
-    {
-        width: 88px;
-        height: 88px;
+        border-width: 2px;
     }
 
 
-    .presentation .title
+    .presentation .item .icon img
     {
-        font-size: 60px;
-        line-height: 68px;
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .presentation .item .name
+    {
+        font-size: 20px;
     }
 
 
@@ -523,20 +525,37 @@
     /*---------------
         Cart info
     ---------------*/
+    .cart_info .block_title
+    {
+        font-size: 32px;
+    }
+
+
+    .cart_info table th
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .cart_info table td
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .cart_info table th + th,
     .cart_info table td + td
     {
-        padding-left: 32px;
+        padding-left: 20px;
     }
 
 
-    .cart_info table td.thumb
+    .cart_info table td.name
     {
-        width: 140px;
-    }
-
-    .cart_info table td.thumb a
-    {
-        height: 132px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
 
@@ -548,12 +567,8 @@
 
     .cart_info table td.price
     {
-        font-size: 20px;
-    }
-
-    .cart_info table td.price .old
-    {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
 
@@ -566,6 +581,12 @@
     {
         width: 44px;
         height: 44px;
+    }
+
+
+    .cart_info table td.delete
+    {
+        width: 35px;
     }
 
 
@@ -622,37 +643,6 @@
 
 
 
-    /*-------------------
-        Category head
-    -------------------*/
-    .category_head
-    {
-        padding-bottom: 80px;
-    }
-
-    .category_head.margin
-    {
-        padding-bottom: 60px;
-    }
-
-
-    .category_head .title
-    {
-        font-size: 60px;
-        line-height: 68px;
-    }
-
-
-    .category_head .desc
-    {
-        font-size: 16px;
-        line-height: 24px;
-
-        width: 452px;
-    }
-
-
-
     /*--------------
         Products
     --------------*/
@@ -679,7 +669,7 @@
 
     .products .product
     {
-        padding: 22px;
+        padding: 20px;
     }
 
 
@@ -706,6 +696,12 @@
     /*-------------
         LK info
     -------------*/
+    .lk_info .block_title
+    {
+        font-size: 32px;
+    }
+
+
     .lk_info .col_left
     {
         width: 100%;
@@ -883,6 +879,19 @@
 
         width: 220px;
         height: 56px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .vacancy .name,
+    .vacancies .vacancy .section .label,
+    .vacancies .vacancy .section .items
+    {
+        font-size: 15px;
+        line-height: 23px;
     }
 
 
