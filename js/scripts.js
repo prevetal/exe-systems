@@ -69,12 +69,24 @@ document.addEventListener('DOMContentLoaded', function () {
 					slidesPerView: 'auto'
 				},
 				768: {
-					spaceBetween: 16,
+					spaceBetween: 20,
+					slidesPerView: 2
+				},
+				1024: {
+					spaceBetween: 20,
 					slidesPerView: 3
 				},
 				1280: {
 					spaceBetween: 20,
 					slidesPerView: 4
+				},
+				1440: {
+					spaceBetween: 20,
+					slidesPerView: 5
+				},
+				1900: {
+					spaceBetween: 20,
+					slidesPerView: 6
 				}
 			},
 			on: {
@@ -238,6 +250,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	$('header .menu_btn, .main_menu .close_btn').click(function(e){
 		e.preventDefault()
 
+		$('header .menu_btn').toggleClass('active')
 		$('.main_menu').toggleClass('show')
 		$('body').toggleClass('menu_open')
 	})

@@ -7,7 +7,7 @@
     :root
     {
         --sidebar_width: 364px;
-        --font_size_title: 80px;
+        --font_size_title: 48px;
     }
 
 
@@ -45,7 +45,6 @@
     .line_sep
     {
         width: 100%;
-        margin-bottom: 100px;
     }
 
 
@@ -61,25 +60,19 @@
         height: 40px;
     }
 
-    .main_menu .close_btn .icon
-    {
-        width: 40px;
-        height: 40px;
-    }
-
 
     .main_menu .data
     {
         font-size: 30px;
 
         width: 63%;
-        padding: 60px 148px;
+        padding: 60px 166px;
     }
 
 
     .main_menu .data > * + *
     {
-        margin-top: 32px;
+        margin-top: 48px;
     }
 
     .main_menu .data > * + *:before
@@ -108,25 +101,17 @@
         height: 40px;
     }
 
-    .main_search .close_btn .icon
-    {
-        width: 40px;
-        height: 40px;
-    }
-
 
     .main_search .data
     {
         width: 63%;
-        padding: 80px 60px;
+        padding: 80px 20px;
     }
 
 
     .main_search .title
     {
-        font-size: 60px;
-
-        margin-bottom: 60px;
+        padding-left: 100px;
     }
 
 
@@ -190,21 +175,67 @@
 
 
 
-    /*----------------
-        Block head
-    ----------------*/
-    .block_head.big_m,
-    .block_head.big_m2,
-    .block_head.big_m3,
-    .block_head.big_m4
+    /*------------
+        Header
+    ------------*/
+    header .menu_btn
     {
-        margin-bottom: 100px;
+        margin-left: 72px;
     }
 
 
-    .block_head.pad_r
+    header .catalog_link,
+    header .exp
     {
-        padding-right: 235px;
+        margin-left: 60px;
+    }
+
+
+    header .phone,
+    header .search_btn,
+    header .links
+    {
+        margin-left: 48px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding: 199px 0 120px;
+    }
+
+
+    .page_head .title
+    {
+        font-size: 60px;
+    }
+
+
+    .page_head .desc
+    {
+        font-size: 18px;
+
+        width: 508px;
+    }
+
+
+    .page_head .link a
+    {
+        line-height: 32px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 70px;
     }
 
 
@@ -233,22 +264,12 @@
 
 
 
-    /*----------------
-        Typography
-    ----------------*/
-    .text_block
-    {
-        font-size: 22px;
-    }
-
-
-
     /*-----------------
         Main slider
     -----------------*/
     .main_slider .cont
     {
-        padding-top: 159px;
+        padding-top: 200px;
         padding-bottom: 120px;
     }
 
@@ -260,59 +281,51 @@
     }
 
 
-    .main_slider .title
+
+    /*-------------------------
+        Import substitution
+    -------------------------*/
+    .import_substitution
     {
-        font-size: 87px;
+        padding-bottom: 80px;
     }
 
 
-
-    /*--------------
-        Services
-    --------------*/
-    .services
+    .import_substitution .block_head
     {
-        margin-bottom: 72px;
+        margin-bottom: 60px;
     }
 
 
-    .services .row
+    .import_substitution .img
     {
-        margin-bottom: -16px;
-        margin-left: -16px;
-    }
-
-    .services .row > *
-    {
-        width: calc(33.333% - 16px);
-        margin-bottom: 16px;
-        margin-left: 16px;
-    }
-
-    .services .row > *.big_w
-    {
-        width: calc(50% - 16px);
+        width: 1000px;
+        height: 1000px;
+        margin-right: -1180px;
     }
 
 
-    .services .service
+    .import_substitution .text_block
+    {
+        line-height: 187.556%;
+    }
+
+
+    .import_substitution .link a
     {
         font-size: 22px;
 
-        min-height: 344px;
-        padding: 0 40px 40px;
+        padding: 20px 80px;
     }
 
 
-    .services .service .thumb
-    {
-        height: 260px;
-    }
 
-    .services .service .thumb img
+    /*----------------
+        Categories
+    ----------------*/
+    .categories .category
     {
-        width: 136px;
-        height: 136px;
+        font-size: 20px;
     }
 
 
@@ -320,17 +333,10 @@
     /*------------
         Brands
     ------------*/
-    .brands
-    {
-        margin-bottom: 100px;
-        padding: 100px 0;
-    }
-
-
     .brands .swiper-button-next,
     .brands .swiper-button-prev
     {
-        margin-bottom: 117px;
+        margin-bottom: 71px;
     }
 
     .brands .swiper-button-prev
@@ -343,11 +349,6 @@
         right: 0;
     }
 
-
-    .brands .brand .name
-    {
-        min-height: 160px;
-    }
 
     .brands .brand .logo
     {
@@ -367,7 +368,7 @@
 
     .about_info .data
     {
-        width: 884px;
+        width: 804px;
     }
 
 
@@ -398,7 +399,7 @@
     ----------------*/
     .advantages
     {
-        margin-bottom: 100px;
+        margin-bottom: 70px;
         padding-top: 260px;
         padding-bottom: 100px;
     }
@@ -407,7 +408,7 @@
     .advantages .swiper-button-next,
     .advantages .swiper-button-prev
     {
-        margin-bottom: 117px;
+        margin-bottom: 71px;
     }
 
     .advantages .swiper-button-prev
@@ -423,7 +424,7 @@
 
     .advantages .swiper-slide
     {
-        width: 448px;
+        width: 424px;
     }
 
 
@@ -435,8 +436,6 @@
     .advantages .item .name
     {
         font-size: 22px;
-
-        margin-bottom: 40px;
     }
 
 
@@ -444,7 +443,7 @@
     /*-------------
         Reviews
     -------------*/
-    .reviews
+    /* .reviews
     {
         margin-bottom: 100px;
     }
@@ -482,19 +481,13 @@
     .reviews .review .name
     {
         margin-bottom: 32px;
-    }
+    } */
 
 
 
     /*--------------
         Partners
     --------------*/
-    .partners
-    {
-        margin-bottom: 100px;
-    }
-
-
     .partners .row
     {
         margin-bottom: -16px;
@@ -517,42 +510,10 @@
 
 
     /*----------------
-        About head
-    ----------------*/
-    .about_head
-    {
-        margin-bottom: 100px;
-    }
-
-
-    .about_head .cont
-    {
-        padding-top: 159px;
-        padding-bottom: 120px;
-    }
-
-
-    .about_head .title
-    {
-        font-size: 87px;
-        line-height: 120%;
-    }
-
-
-
-    /*----------------
         About desc
     ----------------*/
-    .about_desc
-    {
-        margin-bottom: 100px;
-    }
-
-
     .about_desc .data
     {
-        font-size: 22px;
-
         width: calc(100% - 644px);
     }
 
@@ -560,18 +521,6 @@
     .about_desc .image
     {
         width: 580px;
-        height: 720px;
-    }
-
-
-
-    /*-----------
-        Certs
-    -----------*/
-    .certs
-    {
-        margin-bottom: 100px;
-        padding: 100px 0;
     }
 
 
@@ -579,36 +528,16 @@
     /*------------------
         Presentation
     ------------------*/
-    .presentation
+    .presentation .item
     {
-        margin-bottom: 100px;
+        height: 360px;
+        padding-top: 36px;
     }
 
 
-    .presentation .download_link
+    .presentation .item .name
     {
-        font-size: 32px;
-        line-height: 40px;
-
-        width: 480px;
-        height: 480px;
-        padding: 38px;
-
-        border-width: 2px;
-        border-radius: 24px;
-    }
-
-    .presentation .download_link .icon
-    {
-        width: 124px;
-        height: 124px;
-    }
-
-
-    .presentation .title
-    {
-        font-size: 80px;
-        line-height: 120%;
+        font-size: 24px;
     }
 
 
@@ -616,12 +545,6 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info
-    {
-        padding: 100px 0;
-    }
-
-
     .contacts_info .data
     {
         width: 480px;
@@ -668,33 +591,15 @@
     /*---------------
         Cart info
     ---------------*/
-    .cart_info
-    {
-        margin-bottom: 80px;
-    }
-
-
-    .cart_info table td + td
-    {
-        padding-left: 48px;
-    }
-
-
-    .cart_info table td.thumb
-    {
-        width: 160px;
-    }
-
-    .cart_info table td.thumb a
-    {
-        height: 148px;
-        padding: 16px;
-    }
-
-
     .cart_info table td.buy
     {
         width: 160px;
+    }
+
+
+    .cart_info .cart_total
+    {
+        margin-top: 60px;
     }
 
 
@@ -735,35 +640,6 @@
 
 
     /*-------------------
-        Category head
-    -------------------*/
-    .category_head
-    {
-        padding-top: 159px;
-        padding-bottom: 100px;
-    }
-
-    .category_head.margin
-    {
-        padding-bottom: 80px;
-    }
-
-
-    .category_head .title
-    {
-        font-size: 80px;
-        line-height: 120%;
-    }
-
-
-    .category_head .desc
-    {
-        margin-top: 20px;
-    }
-
-
-
-    /*-------------------
         Products head
     -------------------*/
     .products_head
@@ -782,12 +658,6 @@
     /*--------------
         Products
     --------------*/
-    .products
-    {
-        margin-bottom: 80px;
-    }
-
-
     .products .block_title
     {
         font-size: 44px;
@@ -809,43 +679,20 @@
     }
 
 
+    .products .row
+    {
+        --products_count: 4;
+    }
+
+    .products .row > *
+    {
+        width: calc(25% - 20px);
+    }
+
+
     .products .product
     {
         padding: 18px;
-    }
-
-
-    .products .product .thumb
-    {
-        height: 260px;
-        margin-bottom: 40px;
-    }
-
-
-    .products .product .name
-    {
-        font-size: 22px;
-    }
-
-
-
-    .products .product .btns > * + *
-    {
-        margin-left: 12px;
-    }
-
-
-    .products .product .btns .btn
-    {
-        font-size: 13px;
-
-        padding: 14px 20px;
-    }
-
-    .products .product .btns .btn.buy_btn
-    {
-        padding-right: 16px;
-        padding-left: 16px;
     }
 
 
@@ -853,12 +700,6 @@
     /*--------------
         Feedback
     --------------*/
-    .feedback
-    {
-        padding: 100px 0;
-    }
-
-
     .feedback .block_title
     {
         font-size: 44px;
