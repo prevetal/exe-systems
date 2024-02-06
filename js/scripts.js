@@ -501,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Cookie
-	if(!localStorage.getItem('cookie_accept')) {
+	if(localStorage.getItem('cookie_accept')) {
 		$('.cookie').addClass('show')
 	}
 
