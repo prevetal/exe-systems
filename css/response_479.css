@@ -408,6 +408,7 @@
     .product_info .images .image
     {
         height: 360px;
+        padding: 20px;
     }
 
 

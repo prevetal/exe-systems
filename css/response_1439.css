@@ -717,6 +717,12 @@
     }
 
 
+    .cart_info table td.price.total
+    {
+        width: 160px;
+    }
+
+
     .cart_info table td.delete
     {
         width: 43px;
@@ -893,7 +899,6 @@
     .product_info .images .image
     {
         height: 700px;
-        padding: 48px;
     }
 
 

@@ -597,6 +597,12 @@
     }
 
 
+    .cart_info table td.price.total
+    {
+        width: 184px;
+    }
+
+
     .cart_info .cart_total
     {
         margin-top: 60px;
@@ -810,7 +816,7 @@
     .product_info .images .image
     {
         height: 740px;
-        padding: 64px;
+        padding: 24px;
     }
 
 

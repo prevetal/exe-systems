@@ -655,6 +655,12 @@
     }
 
 
+    .cart_info table tr
+    {
+        padding-right: 0;
+    }
+
+
     .cart_info table td.price,
     .cart_info table td.amount
     {
@@ -982,12 +988,6 @@
     {
         width: 100%;
         margin-bottom: 32px;
-    }
-
-
-    .product_info .images .image
-    {
-        height: 480px;
     }
 
 

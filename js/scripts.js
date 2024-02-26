@@ -448,56 +448,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Изменение количества товара
-	const amountMinusBtns = document.querySelectorAll('.amount .minus'),
-		amountPlusBtns = document.querySelectorAll('.amount .plus'),
-		amountInputs = document.querySelectorAll('.amount .input')
+	$('body').on('click', '.amount .minus', function (e) {
+		e.preventDefault()
 
-	if (amountMinusBtns) {
-		amountMinusBtns.forEach(el => {
-			el.addEventListener('click', e => {
-				e.preventDefault()
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			minimum = parseFloat($input.data('minimum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
 
-				let parent = el.closest('.amount'),
-					input = parent.querySelector('.input'),
-					inputVal = parseFloat(input.value),
-					minimum = parseFloat(input.getAttribute('data-minimum')),
-					step = parseFloat(input.getAttribute('data-step')),
-					unit = input.getAttribute('data-unit')
+		if (inputVal > minimum) $input.val(inputVal - step + unit)
 
-				if (inputVal > minimum) input.value = inputVal - step + unit
-			})
+		if ($(this).hasClass('update_price')) {
+	    	let _self = $(this)
+
+			setTimeout(() => updatePrice(_self.closest('tr')))
+	    }
+	})
+
+	$('body').on('click', '.amount .plus', function (e) {
+		e.preventDefault()
+
+		const $parent = $(this).closest('.amount'),
+			$input = $parent.find('.input'),
+			inputVal = parseFloat($input.val()),
+			maximum = parseFloat($input.data('maximum')),
+			step = parseFloat($input.data('step')),
+			unit = $input.data('unit')
+
+		if (inputVal < maximum) $input.val(inputVal + step + unit)
+
+		if ($(this).hasClass('update_price')) {
+	    	let _self = $(this)
+
+			setTimeout(() => updatePrice(_self.closest('tr')))
+	    }
+	})
+
+	$('.amount .input').keydown(function () {
+		const _self = $(this),
+			maximum = parseInt(_self.data('maximum'))
+
+		setTimeout(() => {
+			if (_self.val() == '' || _self.val() == 0) _self.val(parseInt(_self.data('minimum')))
+			if (_self.val() > maximum) _self.val(maximum)
+
+			updatePrice(_self.closest('tr'))
 		})
-	}
-
-	if (amountPlusBtns) {
-		amountPlusBtns.forEach(el => {
-			el.addEventListener('click', e => {
-				e.preventDefault()
-
-				let parent = el.closest('.amount'),
-					input = parent.querySelector('.input'),
-					inputVal = parseFloat(input.value),
-					maximum = parseFloat(input.getAttribute('data-maximum')),
-					step = parseFloat(input.getAttribute('data-step')),
-					unit = input.getAttribute('data-unit')
-
-				if (inputVal < maximum) input.value = inputVal + step + unit
-			})
-		})
-	}
-
-	if (amountInputs) {
-		amountInputs.forEach(el => {
-			el.addEventListener('keydown', e => {
-				let maximum = parseInt(el.getAttribute('data-maximum'))
-
-				setTimeout(() => {
-					if (el.value == '' || el.value == 0) el.maximum = parseInt(el.getAttribute('data-minimum'))
-					if (el.value > maximum) el.value = maximum
-				})
-			})
-		})
-	}
+	})
 
 
 	// Cookie
@@ -587,4 +586,17 @@ function productsHeight(context, step) {
 		finish = finish + step
 		i++
 	})
+}
+
+
+
+// Расчёт итоговой цены
+function updatePrice(context) {
+	if(context != null) {
+		let price = parseFloat(context.find('.price:not(.total)').data('price')),
+		amount = parseFloat(context.find('.amount .input').val()),
+		totalPrice = price * amount
+
+		context.find('.price.total span').text( totalPrice.toLocaleString('ru-RU') )
+	}
 }

@@ -683,12 +683,10 @@ header .socials .icon
 
 header .phone
 {
-    font-size: 16px;
-    line-height: 100.02%;
+    font-size: 14px;
+    line-height: 100%;
 
     margin-left: 58px;
-
-    text-transform: uppercase;
 }
 
 
@@ -776,6 +774,7 @@ header .links .btn
     width: 46px;
     height: 47px;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: #1b429c;
@@ -796,6 +795,13 @@ header .links .favorites_link .icon
 {
     width: 22px;
     height: 21px;
+}
+
+
+header .links a.active,
+header .links .btn.active
+{
+    color: #f00;
 }
 
 
@@ -3482,7 +3488,7 @@ aside
     justify-content: center;
 
     height: 812px;
-    padding: 75px;
+    padding: 40px;
 
     border-radius: 20px;
     background: #f7f7f7;
@@ -3985,6 +3991,13 @@ aside
     line-height: 115%;
 
     white-space: nowrap;
+}
+
+.cart_info table td.price.total
+{
+    width: 240px;
+
+    table-layout: fixed;
 }
 
 

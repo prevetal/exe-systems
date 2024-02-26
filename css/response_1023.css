@@ -471,7 +471,7 @@
         justify-content: space-between;
 
         min-height: 148px;
-        padding: 15px 0 15px 144px;
+        padding: 15px 64px 15px 144px;
 
         border-bottom: 1px dashed;
     }
@@ -719,7 +719,6 @@
     .product_info .images .image
     {
         height: 480px;
-        padding: 24px;
     }
 
 

@@ -571,6 +571,11 @@
         line-height: 22px;
     }
 
+    .cart_info table td.price.total
+    {
+        width: 140px;
+    }
+
 
     .cart_info table td.buy
     {
@@ -750,7 +755,6 @@
     .product_info .images .image
     {
         height: 560px;
-        padding: 24px;
     }
 
 
