@@ -162,12 +162,6 @@ html.custom_scroll ::-webkit-scrollbar-thumb
     background-color: #1b429c;
 }
 
-html.custom_scroll
-{
-    scrollbar-color: #1b429c var(--bg);
-    scrollbar-width: thin;
-}
-
 
 body
 {
@@ -765,6 +759,8 @@ header .links > * + *
 header .links a,
 header .links .btn
 {
+    position: relative;
+
     display: flex;
     align-content: center;
     align-items: center;
@@ -795,6 +791,39 @@ header .links .favorites_link .icon
 {
     width: 22px;
     height: 21px;
+}
+
+
+header .links a .exp,
+header .links .btn .exp
+{
+    font-size: 12px;
+    line-height: 100%;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    display: none;
+
+    margin: 10px 0 0;
+    padding: 5px 7px;
+
+    transform: translateX(-50%);
+    white-space: nowrap;
+    pointer-events: none;
+
+    color: #232323;
+    border: 1px solid #1b429c;
+    border-radius: 5px;
+    background: #fff;
+}
+
+
+header .links a:hover .exp,
+header .links .btn:hover .exp
+{
+    display: block;
 }
 
 
